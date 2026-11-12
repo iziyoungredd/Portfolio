@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upside Down Unkh | Modern Sacred Heritage & Luxury Artifacts</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        unkhRed: '#DC2626',
+                        unkhRedDark: '#991B1B',
+                        unkhMagenta: '#E11D48',
+                        unkhMagentaBright: '#FF007F',
+                        unkhGold: '#D4AF37',
+                        unkhGoldLight: '#F3E5AB',
+                        obsidian: '#0B0B0F',
+                        obsidianLight: '#14141C',
+                        obsidianBorder: '#262635'
+                    },
+                    fontFamily: {
+                        sans: ['Cinzel', 'Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    boxShadow: {
+                        'neon-red': '0 0 25px rgba(220, 38, 38, 0.4)',
+                        'neon-magenta': '0 0 25px rgba(225, 29, 72, 0.5)',
+                        'neon-gold': '0 0 20px rgba(212, 175, 55, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lucide / FontAwesome compatibility -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0B0F;
+            color: #E2E8F0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, .brand-font {
+            font-family: 'Cinzel', serif;
+        }
+        
+        /* Custom Glowing & Metallic Gradients */
+        .text-gradient-red-magenta {
+            background: linear-gradient(135deg, #FF0055 0%, #DC2626 50%, #E11D48 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-unkh {
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(225, 29, 72, 0.2) 50%, rgba(11, 11, 15, 0.95) 100%);
+        }
+        .border-glow {
+            border: 1px solid rgba(225, 29, 72, 0.3);
+            transition: all 0.3s ease;
+        }
+        .border-glow:hover {
+            border-color: rgba(255, 0, 127, 0.8);
+            box-shadow: 0 0 20px rgba(225, 29, 72, 0.3);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0B0F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262635;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E11D48;
+        }
+    </style>
+</head>
+<body class="bg-obsidian text-gray-200 antialiased selection:bg-unkhMagenta selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-40 bg-obsidian/80 backdrop-blur-md border-b border-obsidianBorder transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative w-10 h-10 flex items-center justify-center">
+                    <!-- SVG Ankh Icon Inverted -->
+                    <svg class="w-9 h-9 text-unkhMagenta transition-transform duration-500 transform group-hover:rotate-180 filter drop-shadow-[0_0_8px_rgba(225,29,72,0.8)]" viewBox="0 0 100 140" fill="currentColor">
+                        <!-- Inverted Ankh geometry -->
+                        <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="brand-font font-black text-xl tracking-widest text-gradient-red-magenta">UPSIDE DOWN</span>
+                    <span class="brand-font tracking-[0.3em] text-xs text-unkhGold -mt-1 font-semibold">UNKH</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-widest uppercase">
+                <a href="#about" class="hover:text-unkhMagenta transition-colors duration-200">The Legend</a>
+                <a href="#history" class="hover:text-unkhMagenta transition-colors duration-200">History</a>
+                <a href="#collection" class="hover:text-unkhMagenta transition-colors duration-200">Ankh Chains</a>
+                <a href="#symbolism" class="hover:text-unkhMagenta transition-colors duration-200">Sacred Symbolism</a>
+                <a href="#customizer" class="hover:text-unkhMagenta transition-colors duration-200">Custom Atelier</a>
+            </div>
+
+            <!-- Right Utilities (Cart & CTA) -->
+            <div class="flex items-center space-x-5">
+                <button id="openCartBtn" class="relative p-2 text-gray-300 hover:text-unkhMagenta transition-colors duration-200" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping text-xl"></i>
+                    <span id="cartBadge" class="absolute -top-1 -right-1 bg-gradient-to-r from-unkhRed to-unkhMagenta text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border border-obsidian hidden">0</span>
+                </button>
+                <a href="#customizer" class="hidden sm:inline-flex items-center px-4 py-2 rounded-full border border-unkhMagenta/50 bg-unkhMagenta/10 hover:bg-unkhMagenta hover:text-white transition-all duration-300 text-xs font-semibold uppercase tracking-wider text-unkhMagenta shadow-neon-magenta">
+                    Craft Ankh
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-gray-300 hover:text-white p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-obsidianLight border-b border-obsidianBorder px-6 py-6 space-y-4">
+            <a href="#about" class="block text-sm font-semibold tracking-widest uppercase hover:text-unkhMagenta mobile-link">The Legend</a>
+            <a href="#history" class="block text-sm font-semibold tracking-widest uppercase hover:text-unkhMagenta mobile-link">History</a>
+            <a href="#collection" class="block text-sm font-semibold tracking-widest uppercase hover:text-unkhMagenta mobile-link">Ankh Chains</a>
+            <a href="#symbolism" class="block text-sm font-semibold tracking-widest uppercase hover:text-unkhMagenta mobile-link">Sacred Symbolism</a>
+            <a href="#customizer" class="block text-sm font-semibold tracking-widest uppercase hover:text-unkhMagenta mobile-link">Custom Atelier</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Canvas Background Animation -->
+        <canvas id="heroCanvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-60 z-0"></canvas>
+        
+        <!-- Glowing Ambient Lighting -->
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-unkhRed/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-unkhMagenta/15 rounded-full blur-[150px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+            <!-- Subtitle Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-unkhRed/40 bg-obsidianLight/80 backdrop-blur-md mb-6 shadow-neon-red">
+                <span class="w-2 h-2 rounded-full bg-unkhMagenta animate-pulse"></span>
+                <span class="text-xs uppercase tracking-[0.25em] text-gray-300 font-semibold">Contemporary Sacred Alchemy</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-white mb-6 leading-tight">
+                <span class="text-gradient-red-magenta drop-shadow-lg">Join</span> Eternal Life & Modern Heritage
+            </h1>
+
+            <p class="max-w-2xl text-base sm:text-lg text-gray-400 font-light mb-10 leading-relaxed">
+                The ancient Ankh represents the Key of Life. Turning it upside down grounds divine universal energy into earthly manifestation. Join our exclusive lineage of luxury Ankh chain artifacts, fine jewelry, and rebellious spiritual statements.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#collection" class="px-8 py-4 rounded-full bg-gradient-to-r from-unkhRed to-unkhMagenta text-white font-bold uppercase tracking-widest text-xs shadow-neon-magenta hover:brightness-110 transform hover:-translate-y-0.5 transition-all text-center">
+                    Join The Legacy
+                </a>
+                <a href="#customizer" class="px-8 py-4 rounded-full border border-unkhGold/50 bg-obsidianLight/60 hover:bg-unkhGold/10 text-unkhGold font-bold uppercase tracking-widest text-xs backdrop-blur-md hover:border-unkhGold transform hover:-translate-y-0.5 transition-all text-center">
+                    Design Your Artifact
+                </a>
+            </div>
+
+            <!-- Floating Interactive Ankh Display -->
+            <div class="mt-14 relative group cursor-pointer" id="heroAnkhToggle">
+                <div class="absolute inset-0 bg-gradient-to-r from-unkhRed to-unkhMagenta rounded-full blur-2xl opacity-40 group-hover:opacity-75 transition-opacity"></div>
+                <div class="relative bg-obsidianLight border border-obsidianBorder p-6 rounded-3xl backdrop-blur-xl flex flex-col items-center gap-3">
+                    <svg id="heroAnkhSvg" class="w-24 h-32 text-gradient-red-magenta transform rotate-180 transition-transform duration-700 ease-out filter drop-shadow-[0_0_15px_rgba(225,29,72,0.6)]" viewBox="0 0 100 140" fill="currentColor">
+                        <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                    </svg>
+                    <span class="text-[10px] uppercase tracking-widest text-gray-400 group-hover:text-unkhMagenta transition-colors">
+                        Click to Invert Duality <i class="fa-solid fa-rotate-right ml-1"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND STORY / ABOUT SECTION -->
+    <section id="about" class="py-24 bg-obsidianLight relative border-t border-b border-obsidianBorder overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Visual Graphic Side -->
+                <div class="relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden border border-obsidianBorder bg-obsidian p-8 shadow-2xl">
+                        <div class="aspect-square rounded-xl bg-gradient-to-br from-obsidianLight to-obsidian border border-unkhRed/20 flex flex-col items-center justify-center p-8 relative overflow-hidden group">
+                            <!-- Background Sacred Grid Lines -->
+                            <div class="absolute inset-0 bg-[radial-gradient(#E11D48_1px,transparent_1px)] [background-size:24px_24px] opacity-20"></div>
+                            
+                            <!-- Gold Circular Emblem -->
+                            <div class="w-64 h-64 rounded-full border border-unkhGold/30 flex items-center justify-center relative animate-[spin_60s_linear_infinite]">
+                                <div class="w-48 h-48 rounded-full border border-dashed border-unkhMagenta/40"></div>
+                            </div>
+                            
+                            <svg class="w-32 h-44 text-gradient-red-magenta absolute transition-transform duration-700 group-hover:scale-110 filter drop-shadow-[0_0_20px_rgba(220,38,38,0.5)]" viewBox="0 0 100 140" fill="currentColor">
+                                <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Decorative Floating Card -->
+                    <div class="absolute -bottom-6 -right-6 bg-obsidian border border-unkhMagenta/40 p-5 rounded-xl shadow-neon-magenta hidden sm:block max-w-xs z-20">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-ankh text-2xl text-unkhMagenta"></i>
+                            <div>
+                                <h4 class="brand-font font-bold text-sm text-white">Sacred Paradox</h4>
+                                <p class="text-xs text-gray-400">As Above, So Below.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-unkhRed/10 border border-unkhRed/30 text-unkhMagenta text-xs font-bold uppercase tracking-widest">
+                        Philosophy & Genesis
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold uppercase tracking-tight text-white leading-tight">
+                        Fusing Ancient Royalty With <span class="text-gradient-red-magenta">Unapologetic Modernity</span>
+                    </h2>
+                    <p class="text-gray-400 font-light leading-relaxed">
+                        In classical Kemet, the Ankh was the revered breath of life—held by gods and pharaohs. <strong class="text-white font-medium">Upside Down Unkh</strong> reclaims this emblem for the contemporary sovereign. By turning the sacred icon on its head, we symbolize the intentional grounding of divine spirit directly into physical reality.
+                    </p>
+                    <p class="text-gray-400 font-light leading-relaxed">
+                        Every piece of luxury apparel, heavy gold medallion, and bespoke gem crafted in our atelier merges deep esoteric geometry with modern streetwear elegance and high-end couture finishings.
+                    </p>
+
+                    <!-- Feature Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl border border-obsidianBorder bg-obsidian/50">
+                            <i class="fa-solid fa-gem text-unkhGold text-lg mb-2"></i>
+                            <h4 class="brand-font font-bold text-sm text-white">Ethical Fine Metals</h4>
+                            <p class="text-xs text-gray-500 mt-1">18K Solid Gold, Sterling Silver & Solid Obsidian.</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-obsidianBorder bg-obsidian/50">
+                            <i class="fa-solid fa-fire text-unkhMagenta text-lg mb-2"></i>
+                            <h4 class="brand-font font-bold text-sm text-white">Signature Pigments</h4>
+                            <p class="text-xs text-gray-500 mt-1">Exclusive Ruby Red & Electric Magenta Enamel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEDICATED HISTORY OF THE ANKH SECTION -->
+    <section id="history" class="py-24 bg-obsidian relative border-b border-obsidianBorder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-unkhGold text-xs font-bold uppercase tracking-[0.3em]">Chronicles of Kemet</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white mt-2 mb-4">
+                    The History of the <span class="text-gradient-gold">Ankh</span>
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base font-light leading-relaxed">
+                    Known to ancient Egyptians as <em>Ankh</em> (☥), translating directly to "Life" or "Breath of Life." Discover thousands of years of sacred evolution—from royal tombs to modern inverted manifestation.
+                </p>
+
+                <!-- Interactive Epoch Timeline Selector -->
+                <div class="flex flex-wrap justify-center gap-2 mt-8" id="historyTabs">
+                    <button data-epoch="genesis" class="history-tab-btn active px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-unkhRed to-unkhMagenta text-white shadow-neon-magenta transition-all">
+                        1. Kemetic Genesis
+                    </button>
+                    <button data-epoch="pharaohs" class="history-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider border border-obsidianBorder bg-obsidianLight hover:border-unkhGold text-gray-400 hover:text-white transition-all">
+                        2. Divine Gods & Kings
+                    </button>
+                    <button data-epoch="hermetic" class="history-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider border border-obsidianBorder bg-obsidianLight hover:border-unkhGold text-gray-400 hover:text-white transition-all">
+                        3. Hermetic Transition
+                    </button>
+                    <button data-epoch="inverted" class="history-tab-btn px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider border border-obsidianBorder bg-obsidianLight hover:border-unkhGold text-gray-400 hover:text-white transition-all">
+                        4. Upside Down Unkh
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dynamic Epoch Content Box -->
+            <div id="historyDisplay" class="bg-obsidianLight border border-obsidianBorder rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-2xl min-h-[380px] flex items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
+                    <!-- Text Content (7 cols) -->
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-flex items-center gap-2 text-unkhGold text-xs font-mono uppercase tracking-widest" id="epochPeriod">
+                            c. 3000 BCE — Early Dynastic Kemet
+                        </div>
+                        <h3 class="brand-font text-2xl sm:text-3xl font-bold text-white" id="epochTitle">
+                            The Breath of Eternal Creation
+                        </h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed" id="epochDesc">
+                            In early Egyptian mythology, the Ankh was the supreme symbol of life, regeneration, and water. Depicted held to the nostrils of pharaohs by deities such as Isis and Ra, it imparted the divine breath required for spiritual awakening and immortality beyond physical death.
+                        </p>
+                        <div class="pt-4 border-t border-obsidianBorder/60 flex flex-wrap gap-4 text-xs text-gray-500 font-mono" id="epochKeyConcepts">
+                            <span class="px-3 py-1 rounded-md bg-obsidian border border-obsidianBorder text-unkhMagenta">✦ Key of Life</span>
+                            <span class="px-3 py-1 rounded-md bg-obsidian border border-obsidianBorder text-unkhGold">✦ Cosmic Womb</span>
+                            <span class="px-3 py-1 rounded-md bg-obsidian border border-obsidianBorder text-unkhRed">✦ Nile Energy</span>
+                        </div>
+                    </div>
+
+                    <!-- Graphic/Symbol Visual (5 cols) -->
+                    <div class="lg:col-span-5 flex flex-col items-center justify-center p-6 bg-obsidian border border-obsidianBorder rounded-2xl relative">
+                        <div class="w-40 h-56 flex items-center justify-center relative" id="epochVisual">
+                            <svg class="w-full h-full text-unkhGold filter drop-shadow-[0_0_18px_rgba(212,175,55,0.4)] transition-all duration-500" viewBox="0 0 100 140" fill="currentColor">
+                                <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                            </svg>
+                        </div>
+                        <span class="text-[10px] text-gray-500 font-mono uppercase tracking-widest mt-3" id="epochVisualCaption">Upright Kemetic Key</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT CATALOG & SHOWCASE -->
+    <section id="collection" class="py-24 bg-obsidian relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white mb-4">
+                    The <span class="text-gradient-red-magenta">Ankh Chain</span> Relics
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base font-light">
+                    Handcrafted inverted Ankh pendants paired with signature cuban, rope, and tennis chains in solid 18K gold, ruby red enamel, and neon magenta accents.
+                </p>
+
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 mt-8" id="filterTabs">
+                    <button data-filter="all" class="filter-btn active px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-unkhRed to-unkhMagenta text-white shadow-neon-magenta transition-all">
+                        All Chains
+                    </button>
+                    <button data-filter="gold" class="filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-obsidianBorder bg-obsidianLight hover:border-unkhMagenta text-gray-400 hover:text-white transition-all">
+                        18K Gold
+                    </button>
+                    <button data-filter="red" class="filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-obsidianBorder bg-obsidianLight hover:border-unkhMagenta text-gray-400 hover:text-white transition-all">
+                        Ruby Red
+                    </button>
+                    <button data-filter="magenta" class="filter-btn px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-obsidianBorder bg-obsidianLight hover:border-unkhMagenta text-gray-400 hover:text-white transition-all">
+                        Magenta Glow
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
+                <!-- Dynamic products rendered via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SACRED SYMBOLISM INTERACTIVE SECTION -->
+    <section id="symbolism" class="py-24 bg-obsidianLight border-t border-b border-obsidianBorder relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-unkhGold text-xs font-bold uppercase tracking-[0.3em]">Hermetic Architecture</span>
+                <h2 class="text-3xl sm:text-5xl font-bold uppercase tracking-tight text-white mt-2">
+                    Deconstructing The <span class="text-gradient-gold">Key Of Life</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Interactive Symbol Map (5 cols) -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center p-8 bg-obsidian border border-obsidianBorder rounded-2xl relative min-h-[400px]">
+                    <!-- Interactive Visual SVG of Ankh with Highlightable Sections -->
+                    <div class="relative w-64 h-80 flex items-center justify-center">
+                        <svg viewBox="0 0 100 140" class="w-full h-full filter drop-shadow-[0_0_15px_rgba(220,38,38,0.3)]">
+                            <!-- Loop (Top when upright, bottom when inverted) -->
+                            <path id="svgLoop" d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z" 
+                                  class="cursor-pointer fill-obsidianLight stroke-unkhRed stroke-[3] transition-all hover:fill-unkhRed/30 symbol-part" data-part="loop"/>
+                            <!-- Crossbar -->
+                            <path id="svgCross" d="M10,50 L90,50 L90,38 L10,38 Z" 
+                                  class="cursor-pointer fill-obsidianLight stroke-unkhMagenta stroke-[3] transition-all hover:fill-unkhMagenta/30 symbol-part" data-part="crossbar"/>
+                            <!-- Stem -->
+                            <path id="svgStem" d="M43,38 L57,38 L57,0 L43,0 Z" 
+                                  class="cursor-pointer fill-obsidianLight stroke-unkhGold stroke-[3] transition-all hover:fill-unkhGold/30 symbol-part" data-part="stem"/>
+                        </svg>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-4 tracking-widest uppercase">Click components of the Ankh to explore</p>
+                </div>
+
+                <!-- Detail Explanation Cards (7 cols) -->
+                <div class="lg:col-span-7 space-y-4" id="symbolDetailsContainer">
+                    <!-- Cards injected via JS or toggled -->
+                    <div class="p-6 rounded-xl border border-unkhRed/40 bg-obsidian/70 hover:bg-obsidian transition-all cursor-pointer symbol-info-card" data-target="loop">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="brand-font font-bold text-lg text-white flex items-center gap-3">
+                                <span class="w-3 h-3 rounded-full bg-unkhRed"></span> The Cosmic Loop (The Feminine / Infinite)
+                            </h3>
+                            <i class="fa-solid fa-circle-dot text-unkhRed"></i>
+                        </div>
+                        <p class="text-sm text-gray-400 font-light leading-relaxed">
+                            Represents the eternal cycle of consciousness, origin without beginning or end. In the inverted position, the loop rests at the base, grounding infinite spirit into physical reality.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl border border-obsidianBorder bg-obsidian/70 hover:bg-obsidian transition-all cursor-pointer symbol-info-card" data-target="crossbar">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="brand-font font-bold text-lg text-white flex items-center gap-3">
+                                <span class="w-3 h-3 rounded-full bg-unkhMagenta"></span> The Horizon Crossbar (Duality & Balance)
+                            </h3>
+                            <i class="fa-solid fa-minus text-unkhMagenta"></i>
+                        </div>
+                        <p class="text-sm text-gray-400 font-light leading-relaxed">
+                            The intersection where spirit meets matter, light meets darkness, and masculine meets feminine. It represents absolute equilibrium across the physical plane.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl border border-obsidianBorder bg-obsidian/70 hover:bg-obsidian transition-all cursor-pointer symbol-info-card" data-target="stem">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="brand-font font-bold text-lg text-white flex items-center gap-3">
+                                <span class="w-3 h-3 rounded-full bg-unkhGold"></span> The Channel Stem (The Masculine Pillar)
+                            </h3>
+                            <i class="fa-solid fa-arrows-up-down text-unkhGold"></i>
+                        </div>
+                        <p class="text-sm text-gray-400 font-light leading-relaxed">
+                            The vertical conduit of divine life force. Pointing upward in the inverted configuration, it acts as an antenna radiating power into the cosmos while remaining firmly anchored below.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATELIER CUSTOMIZER SECTION (Interactive 3D Preview Simulation) -->
+    <section id="customizer" class="py-24 bg-obsidian relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-unkhMagenta text-xs font-bold uppercase tracking-[0.3em]">Bespoke Atelier</span>
+                <h2 class="text-3xl sm:text-5xl font-bold uppercase tracking-tight text-white mt-2">
+                    Craft Your Sacred <span class="text-gradient-red-magenta">Talisman</span>
+                </h2>
+                <p class="text-gray-400 text-sm mt-3">Customize finishes, orientation, and custom esoteric engravings in real-time.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-obsidianLight border border-obsidianBorder rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <!-- Interactive Preview Canvas/Visualizer (7 Cols) -->
+                <div class="lg:col-span-7 flex flex-col items-center justify-center p-8 bg-obsidian rounded-2xl border border-obsidianBorder relative min-h-[450px] overflow-hidden">
+                    
+                    <!-- Ambient Glow Behind Preview -->
+                    <div id="previewGlow" class="absolute w-72 h-72 rounded-full blur-[90px] bg-unkhMagenta/30 transition-all duration-500"></div>
+
+                    <!-- Customizer Render Graphic -->
+                    <div class="relative z-10 flex flex-col items-center">
+                        <div id="customizerGraphicContainer" class="w-48 h-64 flex items-center justify-center transition-all duration-500 transform">
+                            <svg id="customizerSvg" class="w-full h-full filter drop-shadow-xl transition-all duration-500" viewBox="0 0 100 140" fill="#D4AF37">
+                                <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- Realtime Engraving Preview Text -->
+                        <div id="previewEngravingText" class="mt-4 text-xs font-mono tracking-widest text-unkhGold uppercase h-4 opacity-80">
+                            <!-- Injected -->
+                        </div>
+                    </div>
+
+                    <!-- Live Specs Summary -->
+                    <div class="absolute bottom-4 left-4 right-4 flex justify-between items-center text-[11px] text-gray-500 font-mono border-t border-obsidianBorder pt-3">
+                        <span id="specFinish">Finish: Solid Gold</span>
+                        <span id="specOrientation">Orientation: Inverted</span>
+                    </div>
+                </div>
+
+                <!-- Customizer Control Controls (5 Cols) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <!-- Metal/Finish Selection -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-3">1. Select Finish / Metal</label>
+                        <div class="grid grid-cols-3 gap-3">
+                            <button data-finish="gold" data-color="#D4AF37" data-glow="rgba(212,175,55,0.4)" class="finish-btn active p-3 rounded-xl border border-unkhGold bg-obsidian text-left flex flex-col items-center gap-1 hover:border-unkhGold">
+                                <span class="w-6 h-6 rounded-full bg-gradient-to-r from-yellow-300 to-yellow-600 border border-white/20"></span>
+                                <span class="text-[10px] font-bold uppercase text-gray-300 mt-1">18K Gold</span>
+                            </button>
+                            <button data-finish="ruby" data-color="#DC2626" data-glow="rgba(220,38,38,0.5)" class="finish-btn p-3 rounded-xl border border-obsidianBorder bg-obsidian text-left flex flex-col items-center gap-1 hover:border-unkhRed">
+                                <span class="w-6 h-6 rounded-full bg-gradient-to-r from-red-600 to-red-900 border border-white/20"></span>
+                                <span class="text-[10px] font-bold uppercase text-gray-300 mt-1">Ruby Red</span>
+                            </button>
+                            <button data-finish="magenta" data-color="#FF007F" data-glow="rgba(255,0,127,0.5)" class="finish-btn p-3 rounded-xl border border-obsidianBorder bg-obsidian text-left flex flex-col items-center gap-1 hover:border-unkhMagenta">
+                                <span class="w-6 h-6 rounded-full bg-gradient-to-r from-pink-500 to-rose-700 border border-white/20"></span>
+                                <span class="text-[10px] font-bold uppercase text-gray-300 mt-1">Magenta Glow</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Orientation Selection -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-3">2. Symbol Orientation</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button data-orientation="inverted" class="orient-btn active p-3 rounded-xl border border-unkhMagenta bg-obsidian text-center font-bold text-xs uppercase text-white">
+                                Inverted (Upside Down)
+                            </button>
+                            <button data-orientation="classic" class="orient-btn p-3 rounded-xl border border-obsidianBorder bg-obsidian text-center font-bold text-xs uppercase text-gray-400 hover:text-white">
+                                Classic Upright
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Custom Engraving Input -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">3. Sacred Engraving (Max 12 Chars)</label>
+                        <input type="text" id="engravingInput" maxlength="12" placeholder="e.g. ETERNAL / KEMET" 
+                               class="w-full bg-obsidian border border-obsidianBorder rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-unkhMagenta font-mono uppercase tracking-widest">
+                    </div>
+
+                    <!-- Price & Add to Cart -->
+                    <div class="pt-4 border-t border-obsidianBorder flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] text-gray-500 uppercase tracking-widest block">Custom Artifact Total</span>
+                            <span class="text-2xl font-bold brand-font text-white" id="customPrice">$490</span>
+                        </div>
+                        <button id="addCustomToCartBtn" class="px-6 py-3 rounded-full bg-gradient-to-r from-unkhRed to-unkhMagenta text-white font-bold uppercase text-xs tracking-wider shadow-neon-magenta hover:brightness-110 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-plus"></i> Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP / SECRET ORDER NEWSLETTER -->
+    <section class="py-20 bg-gradient-unkh border-t border-obsidianBorder relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="w-12 h-12 rounded-full bg-unkhMagenta/20 border border-unkhMagenta/40 flex items-center justify-center mx-auto mb-6 text-unkhMagenta shadow-neon-magenta">
+                <i class="fa-solid fa-eye text-xl"></i>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white mb-3">
+                Join The Secret Order
+            </h2>
+            <p class="text-gray-400 text-sm max-w-lg mx-auto mb-8">
+                Unlock private access to drop releases, secret vault access, and private invitations to sacred alchemy gatherings.
+            </p>
+
+            <form id="newsletterForm" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input type="email" required placeholder="Enter your email address" 
+                       class="flex-1 bg-obsidian border border-obsidianBorder rounded-full px-6 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-unkhMagenta">
+                <button type="submit" class="px-8 py-3 rounded-full bg-gradient-to-r from-unkhRed to-unkhMagenta text-white font-bold uppercase text-xs tracking-widest shadow-neon-red hover:brightness-110 transition-all whitespace-nowrap">
+                    Initiate
+                </button>
+            </form>
+            <p id="newsletterSuccess" class="hidden text-xs text-unkhGold mt-4 font-mono">
+                ✓ Initiate Accepted. Check your inbox for your secret pass key.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-obsidian border-t border-obsidianBorder py-12 text-gray-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <!-- Brand Info -->
+            <div class="flex items-center gap-3">
+                <svg class="w-6 h-8 text-unkhMagenta" viewBox="0 0 100 140" fill="currentColor">
+                    <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                </svg>
+                <span class="brand-font font-bold text-sm text-gray-300 tracking-widest">UPSIDE DOWN UNKH</span>
+            </div>
+
+            <!-- Links -->
+            <div class="flex flex-wrap gap-6 tracking-widest uppercase">
+                <a href="#" class="hover:text-unkhMagenta transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-unkhMagenta transition-colors">Terms of Alchemy</a>
+                <a href="#" class="hover:text-unkhMagenta transition-colors">Authenticity Verify</a>
+                <a href="#" class="hover:text-unkhMagenta transition-colors">Contact Atelier</a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex space-x-4 text-base">
+                <a href="#" class="w-8 h-8 rounded-full border border-obsidianBorder flex items-center justify-center hover:text-white hover:border-unkhMagenta transition-colors"><i class="fa-brands font-normal fa-instagram"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full border border-obsidianBorder flex items-center justify-center hover:text-white hover:border-unkhMagenta transition-colors"><i class="fa-brands font-normal fa-tiktok"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full border border-obsidianBorder flex items-center justify-center hover:text-white hover:border-unkhMagenta transition-colors"><i class="fa-brands font-normal fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="text-center text-[10px] text-gray-600 mt-8">
+            &copy; <span id="year"></span> Upside Down Unkh Inc. All Sacred Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- CART SIDE DRAWER MODAL -->
+    <div id="cartDrawer" class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0">
+        <!-- Overlay -->
+        <div id="cartOverlay" class="absolute inset-0 bg-black/70 backdrop-blur-sm pointer-events-auto"></div>
+        
+        <!-- Drawer Panel -->
+        <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-obsidianLight border-l border-obsidianBorder p-6 flex flex-col justify-between pointer-events-auto transform translate-x-full transition-transform duration-300 shadow-2xl" id="cartPanel">
+            <!-- Header -->
+            <div>
+                <div class="flex justify-between items-center border-b border-obsidianBorder pb-4">
+                    <h3 class="brand-font font-bold text-lg text-white flex items-center gap-2">
+                        <i class="fa-solid fa-bag-shopping text-unkhMagenta"></i> Sacred Cart (<span id="drawerCartCount">0</span>)
+                    </h3>
+                    <button id="closeCartBtn" class="text-gray-400 hover:text-white p-2">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Items List -->
+                <div id="cartItemsContainer" class="mt-6 space-y-4 max-h-[60vh] overflow-y-auto pr-1">
+                    <!-- Dynamic Cart Items -->
+                    <p id="emptyCartMsg" class="text-center text-gray-500 py-10 text-sm">Your cart is currently empty.</p>
+                </div>
+            </div>
+
+            <!-- Footer / Checkout -->
+            <div class="border-t border-obsidianBorder pt-4 space-y-4">
+                <div class="flex justify-between text-sm">
+                    <span class="text-gray-400 uppercase tracking-widest text-xs">Subtotal</span>
+                    <span class="font-bold brand-font text-white text-lg" id="cartSubtotal">$0.00</span>
+                </div>
+                <button class="w-full py-4 rounded-full bg-gradient-to-r from-unkhRed to-unkhMagenta text-white font-bold uppercase tracking-widest text-xs shadow-neon-magenta hover:brightness-110 transition-all">
+                    Proceed To Sacred Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUICK VIEW MODAL -->
+    <div id="quickViewModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div id="quickViewOverlay" class="absolute inset-0 bg-black/80 backdrop-blur-md"></div>
+        <div class="relative bg-obsidian border border-obsidianBorder rounded-3xl max-w-2xl w-full p-6 sm:p-8 z-10 shadow-2xl transform scale-95 transition-transform duration-300" id="quickViewPanel">
+            <button id="closeQuickView" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+                <div class="aspect-square rounded-2xl bg-obsidianLight border border-obsidianBorder flex items-center justify-center p-6" id="qvImage">
+                    <!-- Dynamic Product Image -->
+                </div>
+                <div class="space-y-4">
+                    <span id="qvCategory" class="text-[10px] font-bold uppercase tracking-widest text-unkhMagenta">Category</span>
+                    <h3 id="qvTitle" class="brand-font font-bold text-2xl text-white">Product Title</h3>
+                    <p id="qvPrice" class="text-xl font-bold text-unkhGold">$0.00</p>
+                    <p id="qvDesc" class="text-xs text-gray-400 leading-relaxed font-light">Product description text...</p>
+                    <button id="qvAddToCartBtn" class="w-full py-3 rounded-full bg-gradient-to-r from-unkhRed to-unkhMagenta text-white font-bold uppercase text-xs tracking-wider shadow-neon-magenta hover:brightness-110 transition-all">
+                        Add Relic To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // 1. ANKH CHAINS PRODUCT DATA
+        const PRODUCTS = [
+            {
+                id: 'chain_1',
+                name: 'The Inverted Crown Gold Ankh Chain',
+                category: 'gold',
+                price: 640,
+                imageSvg: `
+                <div class="relative w-full h-full flex flex-col items-center justify-center">
+                    <!-- Chain Loop SVG representation -->
+                    <svg class="w-48 h-20 text-unkhGold opacity-80" viewBox="0 0 200 80" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="6,4">
+                        <path d="M 10 0 C 10 70, 190 70, 190 0" />
+                    </svg>
+                    <!-- Pendant -->
+                    <svg class="w-20 h-28 text-unkhGold -mt-6 filter drop-shadow-[0_0_15px_rgba(212,175,55,0.5)] transform rotate-180" viewBox="0 0 100 140" fill="currentColor">
+                        <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                    </svg>
+                </div>`,
+                desc: 'Heavy 8mm Cuban link chain in 18K solid yellow gold, anchored by our iconic inverted heavy Ankh pendant.'
+            },
+            {
+                id: 'chain_2',
+                name: 'Ruby Flame Inverted Ankh Rope Chain',
+                category: 'red',
+                price: 520,
+                imageSvg: `
+                <div class="relative w-full h-full flex flex-col items-center justify-center">
+                    <svg class="w-48 h-20 text-unkhRed opacity-80" viewBox="0 0 200 80" fill="none" stroke="currentColor" stroke-width="5">
+                        <path d="M 10 0 C 10 70, 190 70, 190 0" />
+                    </svg>
+                    <svg class="w-20 h-28 text-unkhRed -mt-6 filter drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] transform rotate-180" viewBox="0 0 100 140" fill="currentColor">
+                        <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                    </svg>
+                </div>`,
+                desc: 'Deep crimson ruby red enamel coated diamond-cut rope chain paired with an upside down Ankh medallion.'
+            },
+            {
+                id: 'chain_3',
+                name: 'Neon Magenta Solstice Tennis Chain',
+                category: 'magenta',
+                price: 590,
+                imageSvg: `
+                <div class="relative w-full h-full flex flex-col items-center justify-center">
+                    <svg class="w-48 h-20 text-unkhMagenta opacity-90" viewBox="0 0 200 80" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="4,3">
+                        <path d="M 10 0 C 10 70, 190 70, 190 0" />
+                    </svg>
+                    <svg class="w-20 h-28 text-unkhMagentaBright -mt-6 filter drop-shadow-[0_0_18px_rgba(255,0,127,0.8)] transform rotate-180" viewBox="0 0 100 140" fill="currentColor">
+                        <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                    </svg>
+                </div>`,
+                desc: '5mm iced tennis chain lined with electric magenta lab-grown sapphires and a fully iced upside-down Ankh.'
+            },
+            {
+                id: 'chain_4',
+                name: 'Blood Ruby & Gold Two-Tone Ankh Chain',
+                category: 'red',
+                price: 780,
+                imageSvg: `
+                <div class="relative w-full h-full flex flex-col items-center justify-center">
+                    <svg class="w-48 h-20 text-unkhGold opacity-80" viewBox="0 0 200 80" fill="none" stroke="currentColor" stroke-width="5">
+                        <path d="M 10 0 C 10 70, 190 70, 190 0" />
+                    </svg>
+                    <svg class="w-20 h-28 text-unkhRedDark stroke-unkhGold stroke-[3] -mt-6 filter drop-shadow-[0_0_15px_rgba(220,38,38,0.5)] transform rotate-180" viewBox="0 0 100 140" fill="currentColor">
+                        <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                    </svg>
+                </div>`,
+                desc: 'Dual-tone 18K solid gold chain with deep red enamel-infused upside down Ankh centerpiece.'
+            },
+            {
+                id: 'chain_5',
+                name: 'Obsidian & Magenta Heavy Statement Chain',
+                category: 'magenta',
+                price: 710,
+                imageSvg: `
+                <div class="relative w-full h-full flex flex-col items-center justify-center">
+                    <svg class="w-48 h-20 text-unkhMagenta opacity-80" viewBox="0 0 200 80" fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="8,4">
+                        <path d="M 10 0 C 10 70, 190 70, 190 0" />
+                    </svg>
+                    <svg class="w-22 h-30 text-gradient-red-magenta -mt-6 filter drop-shadow-[0_0_20px_rgba(225,29,72,0.7)] transform rotate-180" viewBox="0 0 100 140" fill="currentColor">
+                        <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                    </svg>
+                </div>`,
+                desc: 'Ultra heavyweight dark titanium links holding an oversized neon magenta inverted Ankh.'
+            },
+            {
+                id: 'chain_6',
+                name: 'Pharaoh’s Gold & Crimson Medallion Chain',
+                category: 'gold',
+                price: 850,
+                imageSvg: `
+                <div class="relative w-full h-full flex flex-col items-center justify-center">
+                    <svg class="w-48 h-20 text-unkhGold opacity-90" viewBox="0 0 200 80" fill="none" stroke="currentColor" stroke-width="4">
+                        <path d="M 10 0 C 10 70, 190 70, 190 0" />
+                    </svg>
+                    <div class="w-24 h-24 rounded-full border-2 border-unkhGold flex items-center justify-center bg-obsidian -mt-6 shadow-neon-gold">
+                        <svg class="w-14 h-18 text-unkhGold transform rotate-180" viewBox="0 0 100 140" fill="currentColor">
+                            <path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/>
+                        </svg>
+                    </div>
+                </div>`,
+                desc: 'Circular ceremonial medallion featuring an inverted gold Ankh set against a deep ruby backdrop on a 30-inch gold link.'
+            }
+        ];
+
+        let cart = [];
+
+        // 2. RENDER PRODUCTS
+        function renderProducts(filter = 'all') {
+            const productGrid = document.getElementById('productGrid');
+            const filtered = filter === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.category === filter);
+            
+            productGrid.innerHTML = filtered.map(p => `
+                <div class="group bg-obsidianLight border border-obsidianBorder rounded-2xl p-5 flex flex-col justify-between transition-all duration-300 hover:border-unkhMagenta/50 hover:shadow-neon-magenta">
+                    <div>
+                        <!-- Product Graphic View -->
+                        <div class="aspect-square rounded-xl bg-obsidian border border-obsidianBorder flex items-center justify-center p-6 relative overflow-hidden mb-4 group-hover:scale-105 transition-transform duration-300">
+                            ${p.imageSvg}
+                            <button onclick="openQuickView('${p.id}')" class="absolute bottom-3 right-3 bg-obsidian/80 text-white w-8 h-8 rounded-full border border-obsidianBorder flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:border-unkhMagenta">
+                                <i class="fa-solid fa-eye text-xs"></i>
+                            </button>
+                        </div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-unkhMagenta">${p.category}</span>
+                        <h3 class="brand-font font-bold text-base text-white mt-1 group-hover:text-unkhRed transition-colors">${p.name}</h3>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between border-t border-obsidianBorder pt-4">
+                        <span class="brand-font text-lg font-bold text-unkhGold">$${p.price}</span>
+                        <button onclick="addToCart('${p.id}')" class="px-4 py-2 rounded-full border border-unkhRed/40 bg-unkhRed/10 hover:bg-unkhRed text-white text-xs font-semibold uppercase tracking-wider transition-all hover:shadow-neon-red">
+                            Add Relic
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter Button Toggles
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('active', 'bg-gradient-to-r', 'from-unkhRed', 'to-unkhMagenta', 'text-white', 'shadow-neon-magenta');
+                    b.classList.add('border', 'border-obsidianBorder', 'bg-obsidianLight', 'text-gray-400');
+                });
+                btn.classList.add('active', 'bg-gradient-to-r', 'from-unkhRed', 'to-unkhMagenta', 'text-white', 'shadow-neon-magenta');
+                btn.classList.remove('border', 'border-obsidianBorder', 'bg-obsidianLight', 'text-gray-400');
+                renderProducts(btn.dataset.filter);
+            });
+        });
+
+        // 3. CART SYSTEM
+        function addToCart(productId, customData = null) {
+            if (customData) {
+                cart.push(customData);
+            } else {
+                const prod = PRODUCTS.find(p => p.id === productId);
+                if (!prod) return;
+                const existing = cart.find(item => item.id === productId && !item.isCustom);
+                if (existing) {
+                    existing.qty += 1;
+                } else {
+                    cart.push({ ...prod, qty: 1, isCustom: false });
+                }
+            }
+            updateCartUI();
+            openCartDrawer();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cartBadge');
+            const drawerCount = document.getElementById('drawerCartCount');
+            const container = document.getElementById('cartItemsContainer');
+            const emptyMsg = document.getElementById('emptyCartMsg');
+            const subtotalEl = document.getElementById('cartSubtotal');
+
+            const totalItems = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+            badge.textContent = totalItems;
+            drawerCount.textContent = totalItems;
+
+            if (totalItems > 0) {
+                badge.classList.remove('hidden');
+                emptyMsg.classList.add('hidden');
+            } else {
+                badge.classList.add('hidden');
+                emptyMsg.classList.remove('hidden');
+            }
+
+            let subtotal = 0;
+            container.innerHTML = cart.map((item, idx) => {
+                const itemPrice = item.price * (item.qty || 1);
+                subtotal += itemPrice;
+                return `
+                    <div class="flex items-center justify-between p-3 bg-obsidian border border-obsidianBorder rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-lg bg-obsidianLight border border-obsidianBorder flex items-center justify-center p-2 text-unkhMagenta">
+                                ${item.imageSvg || '<i class="fa-solid fa-gem text-xl"></i>'}
+                            </div>
+                            <div>
+                                <h4 class="brand-font font-bold text-xs text-white">${item.name}</h4>
+                                <span class="text-[11px] text-unkhGold font-mono">$${item.price} ${item.qty > 1 ? `x ${item.qty}` : ''}</span>
+                                ${item.engraving ? `<p class="text-[9px] text-gray-500 font-mono">ENGRAVING: ${item.engraving}</p>` : ''}
+                            </div>
+                        </div>
+                        <button onclick="removeFromCart(${idx})" class="text-gray-500 hover:text-unkhRed p-2">
+                            <i class="fa-solid fa-trash text-xs"></i>
+                        </button>
+                    </div>
+                `;
+            }).join('');
+
+            subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+        }
+
+        // Cart Drawer Controls
+        const cartDrawer = document.getElementById('cartDrawer');
+        const cartPanel = document.getElementById('cartPanel');
+
+        function openCartDrawer() {
+            cartDrawer.classList.remove('pointer-events-none', 'opacity-0');
+            cartDrawer.classList.add('opacity-100');
+            cartPanel.classList.remove('translate-x-full');
+        }
+        function closeCartDrawer() {
+            cartDrawer.classList.add('pointer-events-none', 'opacity-0');
+            cartDrawer.classList.remove('opacity-100');
+            cartPanel.classList.add('translate-x-full');
+        }
+
+        document.getElementById('openCartBtn').addEventListener('click', openCartDrawer);
+        document.getElementById('closeCartBtn').addEventListener('click', closeCartDrawer);
+        document.getElementById('cartOverlay').addEventListener('click', closeCartDrawer);
+
+        // 4. QUICK VIEW MODAL LOGIC
+        const quickViewModal = document.getElementById('quickViewModal');
+        const quickViewPanel = document.getElementById('quickViewPanel');
+        let currentQVProduct = null;
+
+        function openQuickView(productId) {
+            const prod = PRODUCTS.find(p => p.id === productId);
+            if (!prod) return;
+            currentQVProduct = prod;
+
+            document.getElementById('qvImage').innerHTML = prod.imageSvg;
+            document.getElementById('qvCategory').textContent = prod.category;
+            document.getElementById('qvTitle').textContent = prod.name;
+            document.getElementById('qvPrice').textContent = `$${prod.price}`;
+            document.getElementById('qvDesc').textContent = prod.desc;
+
+            quickViewModal.classList.remove('opacity-0', 'pointer-events-none');
+            quickViewPanel.classList.remove('scale-95');
+        }
+
+        function closeQuickView() {
+            quickViewModal.classList.add('opacity-0', 'pointer-events-none');
+            quickViewPanel.classList.add('scale-95');
+        }
+
+        document.getElementById('closeQuickView').addEventListener('click', closeQuickView);
+        document.getElementById('quickViewOverlay').addEventListener('click', closeQuickView);
+        document.getElementById('qvAddToCartBtn').addEventListener('click', () => {
+            if (currentQVProduct) addToCart(currentQVProduct.id);
+            closeQuickView();
+        });
+
+        // 5. ATELIER CUSTOMIZER INTERACTIVITY
+        let customizerState = {
+            finish: 'gold',
+            color: '#D4AF37',
+            glow: 'rgba(212,175,55,0.4)',
+            orientation: 'inverted',
+            engraving: '',
+            price: 490
+        };
+
+        const customizerSvg = document.getElementById('customizerSvg');
+        const customizerGraphicContainer = document.getElementById('customizerGraphicContainer');
+        const previewGlow = document.getElementById('previewGlow');
+        const previewEngravingText = document.getElementById('previewEngravingText');
+        const engravingInput = document.getElementById('engravingInput');
+
+        document.querySelectorAll('.finish-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.finish-btn').forEach(b => b.classList.remove('active', 'border-unkhGold', 'border-unkhRed', 'border-unkhMagenta'));
+                btn.classList.add('active');
+                
+                customizerState.finish = btn.dataset.finish;
+                customizerState.color = btn.dataset.color;
+                customizerState.glow = btn.dataset.glow;
+
+                updateCustomizerPreview();
+            });
+        });
+
+        document.querySelectorAll('.orient-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.orient-btn').forEach(b => {
+                    b.classList.remove('active', 'border-unkhMagenta', 'text-white');
+                    b.classList.add('border-obsidianBorder', 'text-gray-400');
+                });
+                btn.classList.add('active', 'border-unkhMagenta', 'text-white');
+                btn.classList.remove('border-obsidianBorder', 'text-gray-400');
+
+                customizerState.orientation = btn.dataset.orientation;
+                updateCustomizerPreview();
+            });
+        });
+
+        engravingInput.addEventListener('input', (e) => {
+            customizerState.engraving = e.target.value.toUpperCase();
+            previewEngravingText.textContent = customizerState.engraving ? `✦ ${customizerState.engraving} ✦` : '';
+        });
+
+        function updateCustomizerPreview() {
+            customizerSvg.setAttribute('fill', customizerState.color);
+            previewGlow.style.backgroundColor = customizerState.glow;
+
+            if (customizerState.orientation === 'inverted') {
+                customizerGraphicContainer.classList.add('rotate-180');
+                document.getElementById('specOrientation').textContent = 'Orientation: Inverted';
+            } else {
+                customizerGraphicContainer.classList.remove('rotate-180');
+                document.getElementById('specOrientation').textContent = 'Orientation: Classic Upright';
+            }
+
+            document.getElementById('specFinish').textContent = `Finish: ${customizerState.finish.toUpperCase()}`;
+        }
+
+        document.getElementById('addCustomToCartBtn').addEventListener('click', () => {
+            const customProduct = {
+                id: 'custom_' + Date.now(),
+                name: `Custom ${customizerState.finish.toUpperCase()} Ankh (${customizerState.orientation})`,
+                price: customizerState.price,
+                engraving: customizerState.engraving || 'NONE',
+                qty: 1,
+                isCustom: true,
+                imageSvg: `<svg class="w-8 h-10" viewBox="0 0 100 140" fill="${customizerState.color}"><path d="M50,140 C35,140 25,125 25,100 C25,75 42,60 50,60 C58,60 75,75 75,100 C75,125 65,140 50,140 Z M50,122 C58,122 61,112 61,100 C61,85 54,74 50,74 C46,74 39,85 39,100 C39,112 42,122 50,122 Z M10,50 L90,50 L90,38 L57,38 L57,0 L43,0 L43,38 L10,38 Z"/></svg>`
+            };
+            addToCart(null, customProduct);
+        });
+
+        // 6. HERO ANKH TOGGLE DUALITY
+        const heroAnkhToggle = document.getElementById('heroAnkhToggle');
+        const heroAnkhSvg = document.getElementById('heroAnkhSvg');
+        let heroInverted = true;
+
+        heroAnkhToggle.addEventListener('click', () => {
+            heroInverted = !heroInverted;
+            if (heroInverted) {
+                heroAnkhSvg.classList.add('rotate-180');
+            } else {
+                heroAnkhSvg.classList.remove('rotate-180');
+            }
+        });
+
+        // 7. SACRED SYMBOLISM SVG INTERACTION
+        document.querySelectorAll('.symbol-part').forEach(part => {
+            part.addEventListener('click', () => {
+                const targetName = part.dataset.part;
+                document.querySelectorAll('.symbol-info-card').forEach(card => {
+                    if (card.dataset.target === targetName) {
+                        card.classList.add('border-unkhMagenta', 'shadow-neon-magenta');
+                    } else {
+                        card.classList.remove('border-unkhMagenta', 'shadow-neon-magenta');
+                    }
+                });
+            });
+        });
+
+        // 8. NEWSLETTER FORM
+        document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('newsletterSuccess').classList.remove('hidden');
+            e.target.reset();
+        });
+
+        // 9. MOBILE MENU TOGGLE
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // 10. HERO CANVAS ANIMATION (Floating Sacred Geometry Particles)
+        const canvas = document.getElementById('heroCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.color = Math.random() > 0.5 ? '#DC2626' : '#E11D48';
+                this.opacity = Math.random() * 0.5 + 0.2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+                    this.reset();
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = this.opacity;
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = this.color;
+                ctx.fill();
+                ctx.globalAlpha = 1.0;
+            }
+        }
+
+        const particles = Array.from({ length: 45 }, () => new Particle());
+
+        function animateHeroCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateHeroCanvas);
+        }
+
+        // 11. HISTORY SECTION INTERACTIVITY DATA & LOGIC
+        const HISTORY_DATA = {
+            genesis: {
+                period: "c. 3000 BCE — Early Dynastic Kemet",
+                title: "The Breath of Eternal Creation",
+                desc: "In early Egyptian mythology, the Ankh was the supreme symbol of life, regeneration, and water. Depicted held to the nostrils of pharaohs by deities such as Isis, Osiris, and Ra, it imparted the divine breath required for spiritual awakening and immortality beyond physical death.",
+                concepts: ["✦ Key of Life", "✦ Cosmic Womb", "✦ Nile Energy"],
+                color: "#D4AF37",
+                inverted: false,
+                caption: "Upright Kemetic Key"
+            },
+            pharaohs: {
+                period: "c. 1550 BCE — New Kingdom Dynasty",
+                title: "Regal Power & Sacred Alchemy",
+                desc: "Pharaohs carried mirror-polished gold Ankhs into battle and coronation rituals. It was believed that the upper loop mirrored the sun (Ra) rising over the horizon, while the arms represented the two lands of Egypt united under sovereign divine rule.",
+                concepts: ["✦ Pharaoh's Crown", "✦ Solar Ra", "✦ Royal Balance"],
+                color: "#DC2626",
+                inverted: false,
+                caption: "Golden Scepter Emblem"
+            },
+            hermetic: {
+                period: "c. 300 CE — Hermetic & Coptic Era",
+                title: "As Above, So Below",
+                desc: "As Kemetic wisdom blended with Gnostic and Hermetic traditions, the Ankh transformed into the 'Crux Ansata' (handled cross). Esoteric scholars realized the loop symbolised higher consciousness while the horizontal axis represented physical incarnation.",
+                concepts: ["✦ Crux Ansata", "✦ Dual Realms", "✦ Sacred Geometry"],
+                color: "#E11D48",
+                inverted: false,
+                caption: "Hermetic Handled Cross"
+            },
+            inverted: {
+                period: "Present Day — Upside Down Unkh",
+                title: "Grounding Spirit Into Reality",
+                desc: "By turning the sacred Ankh upside down, we complete the circuit of manifestation. Rather than reaching outward toward unattainable heavens, the inverted loop acts as an anchor—channelling divine cosmic power straight down into the physical earth and modern sovereign action.",
+                concepts: ["✦ Physical Manifestation", "✦ Grounded Light", "✦ Modern Sovereignty"],
+                color: "#FF007F",
+                inverted: true,
+                caption: "Inverted Manifestation Engine"
+            }
+        };
+
+        document.querySelectorAll('.history-tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.history-tab-btn').forEach(b => {
+                    b.classList.remove('active', 'bg-gradient-to-r', 'from-unkhRed', 'to-unkhMagenta', 'text-white', 'shadow-neon-magenta');
+                    b.classList.add('border', 'border-obsidianBorder', 'bg-obsidianLight', 'text-gray-400');
+                });
+                btn.classList.add('active', 'bg-gradient-to-r', 'from-unkhRed', 'to-unkhMagenta', 'text-white', 'shadow-neon-magenta');
+                btn.classList.remove('border', 'border-obsidianBorder', 'bg-obsidianLight', 'text-gray-400');
+
+                const data = HISTORY_DATA[btn.dataset.epoch];
+                if (data) {
+                    document.getElementById('epochPeriod').textContent = data.period;
+                    document.getElementById('epochTitle').textContent = data.title;
+                    document.getElementById('epochDesc').textContent = data.desc;
+                    document.getElementById('epochVisualCaption').textContent = data.caption;
+                    document.getElementById('epochKeyConcepts').innerHTML = data.concepts.map(c => `
+                        <span class="px-3 py-1 rounded-md bg-obsidian border border-obsidianBorder text-white">${c}</span>
+                    `).join('');
+
+                    const svg = document.querySelector('#epochVisual svg');
+                    svg.setAttribute('fill', data.color);
+                    if (data.inverted) {
+                        svg.classList.add('rotate-180');
+                    } else {
+                        svg.classList.remove('rotate-180');
+                    }
+                }
+            });
+        });
+
+        window.onload = function() {
+            renderProducts();
+            updateCustomizerPreview();
+            animateHeroCanvas();
+        }
+    </script>
+</body>
+</html>
